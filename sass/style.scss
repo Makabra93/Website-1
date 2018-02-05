@@ -1,9 +1,29 @@
-h1 {
-    text-align: center;
-    margin-top: 45vh;
-    text-transform: uppercase;
-}
-h3 {
-    text-align: center;
-    color: rgb(48, 48, 48);
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700|Comfortaa:400,700&subset=latin-ext');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+
+    header {
+        text-align: center;
+        text-transform: uppercase;
+        height: 100vh;
+        background-image: url("https://images.pexels.com/photos/196660/pexels-photo-196660.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+        background-size: cover;
+
+        .container {
+            background-image: url();
+            padding-top: 20vh;
+
+            h1 {
+                font-family: 'Alegreya', serif;
+                font-size: 4.5em;
+                margin: 0;
+            }
+            p {
+                font-family: 'Comfortaa', cursive;
+                font-size: 1.1em;
+            }
+        }
+    }
 }
