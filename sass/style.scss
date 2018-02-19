@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:400,700|Comfortaa:400,700&subset=latin-ext');
 
+$txtborder: 3px;
+
 body {
     margin: 0 auto;
     padding: 0;
+    font: 700 1.1em 'Comfortaa', cursive;
 
     header {
         text-align: center;
@@ -10,20 +13,70 @@ body {
         height: 100vh;
         background-image: url("https://images.pexels.com/photos/196660/pexels-photo-196660.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
         background-size: cover;
+        
 
         .container {
-            background-image: url();
-            padding-top: 20vh;
+            padding-top: 22vh; 
 
             h1 {
-                font-family: 'Alegreya', serif;
-                font-size: 4.5em;
+                font: 700 4.5em 'Alegreya', serif;
                 margin: 0;
             }
-            p {
-                font-family: 'Comfortaa', cursive;
-                font-size: 1.1em;
+        }
+    }
+
+    .about-us {
+        text-align: center;
+        height: 48vh;
+        padding-top: 15px;
+        font-size: 0.8em;
+        margin: 25px 0;
+
+        .section-border {
+            margin: 30px 20vw;
+            border-bottom: $txtborder solid;
+            padding-bottom: 25px;
+            position: relative;
+
+            .borderTop-left {
+                position: absolute;
+                border-top: $txtborder solid;
+                left: 0;
+                right: 70%;
+                top: 8%;
+            }
+            .borderTop-right {
+                @extend .borderTop-left;
+                left: 70%;
+                right: 0;
+                top: 8%;
+            }
+            .borderSide-left {
+                position: absolute;
+                border-left: $txtborder solid;
+                top: 8%;
+                bottom: 0;
+            }
+            .borderSide-right {
+                position: absolute;
+                border-right: $txtborder solid;
+                top: 8%;
+                bottom: 0; 
+                right: 0;
+            }
+            .section-header {
+                text-transform: uppercase;
+                font-size: 2.0em;
             }
         }
+    }    
+    .services {
+        @extend .about-us;
+        background-color: lightblue;
+        height: 38vh;
+        margin-top: 15px;
+    }
+    .whatWeDo {
+        @extend .about-us;
     }
 }
