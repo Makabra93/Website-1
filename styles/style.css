@@ -19,31 +19,33 @@ body {
     height: 48vh;
     padding-top: 15px;
     font-size: 0.8em;
-    margin: 25px 0; }
+    margin: 15px 0; }
     body .about-us .section-border, body .services .section-border, body .whatWeDo .section-border {
       margin: 30px 20vw;
       border-bottom: 3px solid;
       padding-bottom: 25px;
       position: relative; }
-      body .about-us .section-border .borderTop-left, body .services .section-border .borderTop-left, body .whatWeDo .section-border .borderTop-left, body .about-us .section-border .borderTop-right, body .services .section-border .borderTop-right, body .whatWeDo .section-border .borderTop-right {
+      body .about-us .section-border .borderTop-left, body .services .section-border .borderTop-left, body .whatWeDo .section-border .borderTop-left {
         position: absolute;
         border-top: 3px solid;
         left: 0;
         right: 70%;
-        top: 8%; }
+        top: 6%; }
       body .about-us .section-border .borderTop-right, body .services .section-border .borderTop-right, body .whatWeDo .section-border .borderTop-right {
+        position: absolute;
+        border-top: 3px solid;
         left: 70%;
         right: 0;
-        top: 8%; }
+        top: 6%; }
       body .about-us .section-border .borderSide-left, body .services .section-border .borderSide-left, body .whatWeDo .section-border .borderSide-left {
         position: absolute;
         border-left: 3px solid;
-        top: 8%;
+        top: 6%;
         bottom: 0; }
       body .about-us .section-border .borderSide-right, body .services .section-border .borderSide-right, body .whatWeDo .section-border .borderSide-right {
         position: absolute;
         border-right: 3px solid;
-        top: 8%;
+        top: 6%;
         bottom: 0;
         right: 0; }
       body .about-us .section-border .section-header, body .services .section-border .section-header, body .whatWeDo .section-border .section-header {
@@ -52,6 +54,37 @@ body {
   body .services {
     background-color: lightblue;
     height: 38vh;
-    margin-top: 15px; }
+    margin-top: 0; }
+    body .services .section-border .borderTop-left {
+      top: 8%; }
+    body .services .section-border .borderTop-right {
+      top: 8%; }
+    body .services .section-border .borderSide-left {
+      top: 8%; }
+    body .services .section-border .borderSide-right {
+      top: 8%; }
+    body .services .section-border .section-header {
+      text-transform: uppercase;
+      font-size: 2.0em; }
+  body .whatWeDo {
+    height: 95vh; }
+    body .whatWeDo .section-border .borderTop-left {
+      top: 2.5%; }
+    body .whatWeDo .section-border .borderTop-right {
+      top: 2.5%; }
+    body .whatWeDo .section-border .borderSide-left {
+      top: 2.5%; }
+    body .whatWeDo .section-border .borderSide-right {
+      top: 2.5%; }
+    body .whatWeDo .section-border .section-header {
+      text-transform: uppercase;
+      font-size: 2.0em; }
+    body .whatWeDo .whatWeDo-section {
+      margin: 50px 0; }
+      body .whatWeDo .whatWeDo-section i {
+        font-size: 4.0em;
+        margin-bottom: 15px; }
+      body .whatWeDo .whatWeDo-section h2 {
+        font-size: 2.0em; }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,7 +14,6 @@ body {
         background-image: url("https://images.pexels.com/photos/196660/pexels-photo-196660.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
         background-size: cover;
         
-
         .container {
             padding-top: 22vh; 
 
@@ -30,7 +29,7 @@ body {
         height: 48vh;
         padding-top: 15px;
         font-size: 0.8em;
-        margin: 25px 0;
+        margin: 15px 0;
 
         .section-border {
             margin: 30px 20vw;
@@ -43,24 +42,25 @@ body {
                 border-top: $txtborder solid;
                 left: 0;
                 right: 70%;
-                top: 8%;
+                top: 6%;
             }
             .borderTop-right {
-                @extend .borderTop-left;
+                position: absolute;
+                border-top: $txtborder solid;
                 left: 70%;
                 right: 0;
-                top: 8%;
+                top: 6%;
             }
             .borderSide-left {
                 position: absolute;
                 border-left: $txtborder solid;
-                top: 8%;
+                top: 6%;
                 bottom: 0;
             }
             .borderSide-right {
                 position: absolute;
                 border-right: $txtborder solid;
-                top: 8%;
+                top: 6%;
                 bottom: 0; 
                 right: 0;
             }
@@ -69,14 +69,64 @@ body {
                 font-size: 2.0em;
             }
         }
-    }    
+    }
+
     .services {
         @extend .about-us;
         background-color: lightblue;
         height: 38vh;
-        margin-top: 15px;
+        margin-top: 0;
+        .section-border {
+            .borderTop-left {
+                top: 8%;
+            }
+            .borderTop-right {
+                top: 8%;
+            }
+            .borderSide-left {
+                top: 8%;
+            }
+            .borderSide-right {
+                top: 8%;
+            }
+            .section-header {
+                text-transform: uppercase;
+                font-size: 2.0em;
+            }
+        } 
     }
+
     .whatWeDo {
         @extend .about-us;
+        height: 95vh;
+        .section-border {
+            .borderTop-left {
+                top: 2.5%;
+            }
+            .borderTop-right {
+                top: 2.5%;
+            }
+            .borderSide-left {
+                top: 2.5%;
+            }
+            .borderSide-right {
+                top: 2.5%;
+            }
+            .section-header {
+                text-transform: uppercase;
+                font-size: 2.0em;
+            }
+        }
+        .whatWeDo-section {
+
+            margin: 50px 0;
+            i {
+                font-size: 4.0em;
+                margin-bottom: 15px;
+            }
+            h2 {
+                font-size: 2.0em;
+            }      
+        }
     }
 }
