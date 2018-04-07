@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:400,700|Comfortaa:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Krona+One');
 
 $txtborder: 3px;
 
@@ -10,16 +11,28 @@ body {
     header {
         text-align: center;
         text-transform: uppercase;
-        height: 100vh;
-        background-image: url("https://images.pexels.com/photos/196660/pexels-photo-196660.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-        background-size: cover;
-        
+        position: relative;
+        background-color: rgba(149, 229, 162, 0.616);
         .container {
-            padding-top: 22vh; 
-
-            h1 {
-                font: 700 4.5em 'Alegreya', serif;
-                margin: 0;
+            position: relative;
+            height: 100vh;
+            &::before {
+                position: absolute;
+                z-index: -2;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                content: "";
+                background-image: url("/graphics/bbb.jpg");        
+                background-size: cover;
+            }
+            .container-text {
+                padding-top: 15%;
+                h1 {
+                    font: 700 4.0em 'Krona One', sans-serif;
+                    margin: 0;
+                }
             }
         }
     }
@@ -73,7 +86,7 @@ body {
 
     .services {
         @extend .about-us;
-        background-color: lightblue;
+        background-color: rgba(149, 229, 162, 0.616);
         height: 38vh;
         margin-top: 0;
         .section-border {
@@ -118,11 +131,20 @@ body {
             }
         }
         .whatWeDo-section {
-
+            
             margin: 50px 0;
+            .section-border {
+                max-height: 990px;
+            }
             i {
                 font-size: 4.0em;
                 margin-bottom: 15px;
+                margin-top: 15px;
+                transition: 0.1s;
+                &:hover {
+                    font-size: 4.5em;
+                    color: rgba(149, 229, 162, 0.616);
+                }
             }
             h2 {
                 font-size: 2.0em;
