@@ -20,7 +20,7 @@ body {
         left: 0;
         right: 0;
         content: "";
-        background-image: url("/graphics/bbb.jpg");
+        background-image: url("bbb.jpg");
         background-size: cover; }
       body header .container .container-text {
         padding-top: 15%; }
